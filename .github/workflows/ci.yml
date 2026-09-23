@@ -1,8 +1,8 @@
 name : CI
-ON : [push , pull_request]
+on : [push , pull_request]
 jobs:
   test :
-    runs-on : Ubantu-latest
+    runs-on : ubantu-latest
     steps :
       -uses : actions/checkout@v4
       -uses : actioms/setup-python@v5
