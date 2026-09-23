@@ -1,13 +1,13 @@
-name : CI
-on : [push , pull_request]
+name: CI
+on: [push , pull_request]
 jobs:
-  test :
-    runs-on : ubantu-latest
-    steps :
-      -uses : actions/checkout@v4
-      -uses : actioms/setup-python@v5
-      with:
-        python-version : "3.11"
-      -run : pip install pytest
-      -run : pytest -q
+  test:
+    runs-on: ubantu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actioms/setup-python@v5
+        with:
+        python-version: "3.11"
+      - run: pip install pytest
+      - run: pytest -q
 
